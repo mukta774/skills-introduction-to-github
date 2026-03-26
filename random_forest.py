@@ -7,8 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1p3QnBUSVZIrlRkq74bTYQvl1JuhYDYDd
 """
 
-from google.colab import drive
-drive.mount('/content/drive')
+
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -17,7 +16,9 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
 
 # Load datasets
-df = pd.read_csv("/content/drive/MyDrive/Skin type detection and product recommendation/Skin_Type_OG.csv")
+url = "https://github.com/mukta774/skin_care/blob/2c6f1651027a2a53cbfb494afb2a1335f281e744/Skin_Type_OG.csv"
+df = pd.read_csv(url)
+df
 
 # Use Skin_Type from df1 as target, drop Skin_Type_y from df2
 
