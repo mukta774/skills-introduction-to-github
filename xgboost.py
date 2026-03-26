@@ -8,7 +8,7 @@ Original file is located at
 """
 
 import pandas as pd
-url = "Skin_Type_OG.csv'
+url = "https://github.com/mukta774/skin_care/blob/2c6f1651027a2a53cbfb494afb2a1335f281e744/Skin_Type_OG.csv"
 df = pd.read_csv(url)
 df
 
