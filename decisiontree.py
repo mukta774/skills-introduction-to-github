@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1hW7OLrJvswhWQpenz8tMFOvL3WOkT_yR
 """
 
-from google.colab import drive
-drive.mount('/content/drive')
 
 import pandas as pd
 import numpy as np
@@ -23,7 +21,8 @@ from sklearn.metrics import accuracy_score, confusion_matrix, classification_rep
 from imblearn.over_sampling import SMOTE
 
 # Load dataset
-df = pd.read_csv("/content/drive/MyDrive/Skin type detection and product recommendation/Skin_Type_OG.csv")
+url = "https://github.com/mukta774/skin_care/blob/2c6f1651027a2a53cbfb494afb2a1335f281e744/Skin_Type_OG.csv"
+df = pd.read_csv(url)
 
 # Split features and target
 X = df.drop(columns=['Skin_Type'])
