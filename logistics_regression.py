@@ -17,7 +17,9 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 
 
 #load the dataset
-skin_og = pd.read_csv("/content/drive/MyDrive/Skin type detection and product recommendation/Skin_Type_OG.csv")
+url = "https://github.com/mukta774/skin_care/blob/2c6f1651027a2a53cbfb494afb2a1335f281e744/Skin_Type_OG.csv"
+
+skin_og = pd.read_csv(url)
 
 #preview the dataset and check the info
 print(skin_og.head())
