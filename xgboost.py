@@ -8,9 +8,8 @@ Original file is located at
 """
 
 import pandas as pd
-
-df = pd.read_csv('/content/drive/MyDrive/Skin type detection and product recommendation/skin_lifestyle_dataset.csv')
-
+url = "Skin_Type_OG.csv'
+df = pd.read_csv(url)
 df
 
 """checking for missing values"""
